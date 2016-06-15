@@ -1,7 +1,9 @@
-package edu.galileo.android.tipcalc;
+package edu.galileo.android.tipcalc.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import edu.galileo.android.tipcalc.R;
 
 public class MainActivity extends AppCompatActivity {
 
