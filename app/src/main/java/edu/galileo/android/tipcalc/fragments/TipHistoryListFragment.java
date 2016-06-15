@@ -6,6 +6,7 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import edu.galileo.android.tipcalc.R;
 
@@ -13,7 +14,7 @@ import edu.galileo.android.tipcalc.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TipHistoryListFragment extends Fragment {
+public class TipHistoryListFragment extends Fragment implements TipHistoryListFragmentListener {
 
 
     public TipHistoryListFragment() {
@@ -28,4 +29,8 @@ public class TipHistoryListFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_tip_history_list, container, false);
     }
 
+    @Override
+    public void action(String str) {
+        Toast.makeText(getActivity(), str, Toast.LENGTH_SHORT).show();
+    }
 }
